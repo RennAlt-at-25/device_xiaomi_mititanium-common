@@ -468,12 +468,17 @@ service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
 on property:sys.boot_completed=1
     start qcom-post-boot
 
+
 service charger /system/bin/charger
     class charger
     user system
     group system graphics input
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
+
+# GPS
+on property:persist.sys.xtra-daemon.enabled=*
+    restart loc_launcher
 
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance_little_big.conf
     class core
