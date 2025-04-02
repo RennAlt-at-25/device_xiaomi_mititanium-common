@@ -27,6 +27,9 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG ?= xxhdpi
 
+# UFFD GC
+OVERRIDE_ENABLE_UFFD_GC := false
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
