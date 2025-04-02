@@ -26,7 +26,7 @@ namespace touch {
 namespace V1_0 {
 namespace implementation {
 
-constexpr const char kControlPath[] = "/proc/sys/dev/xiaomi_msm8953_touchscreen/disable_keys";
+constexpr const char kControlPath[] = "/proc/touchpanel/capacitive_keys_disable";
 
 KeyDisabler::KeyDisabler() {
     mHasKeyDisabler = !access(kControlPath, F_OK);
