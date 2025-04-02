@@ -1,9 +1,6 @@
 # Camera
 type camera_socket, file_type, data_file_type;
 
-# DT2W
-type sysctl_mi8953_ts, fs_type, proc_type;
-
 # Fingerprint
 type fingerprint_data_file, file_type, core_data_file_type, data_file_type;
 type fingerprint_socket, file_type;
