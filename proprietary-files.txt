@@ -178,7 +178,7 @@ vendor/etc/init/dpmQmiMgr.rc
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
 vendor/lib64/libdpmqmihal.so
 
-# DRM
+# DRM - from LA.UM.9.6.3.r1-06200-89xx.0
 vendor/bin/qseecomd
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
