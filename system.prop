@@ -110,7 +110,6 @@ debug.renderengine.backend=skiaglthreaded
 
 # Charger
 ro.charger.disable_init_blank=true
-ro.charger.enable_suspend=true
 
 # Data
 ro.vendor.use_data_netmgrd=true
