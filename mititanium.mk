@@ -169,8 +169,8 @@ PRODUCT_PACKAGES += \
 
 # GPS / Location
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti \
-    android.hardware.gnss@2.1-service-qti \
+    android.hardware.gnss@2.0-impl-qti \
+    android.hardware.gnss@2.0-service-qti \
     libbatching \
     libgeofencing \
     libgnss \
@@ -179,21 +179,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor
 
-PRODUCT_PACKAGES += \
-    apdr.conf \
-    flp.conf \
-    gnss_antenna_info.conf \
-    gps.conf \
-    izat.conf \
-    lowi.conf \
-    sap.conf \
-    xtwifi.conf
-
-PRODUCT_PACKAGES += \
-    gnss@2.0-base.policy \
-    gnss@2.0-xtra-daemon.policy \
-    gnss@2.0-xtwifi-client.policy \
-    gnss@2.0-xtwifi-inet-agent.policy
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+    $(LOCAL_PATH)/gps/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    $(LOCAL_PATH)/gps/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
+    $(LOCAL_PATH)/gps/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+    $(LOCAL_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
+    $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
 # Health
 PRODUCT_PACKAGES += \
