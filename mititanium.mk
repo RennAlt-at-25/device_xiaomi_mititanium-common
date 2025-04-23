@@ -11,7 +11,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Signed
--include vendor/extra/product.mk
+-include vendor/lineage-priv/keys/keys.mk
 
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
