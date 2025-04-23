@@ -174,8 +174,10 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+    FMRadio 
+
+$(call soong_config_set_bool,libfmjni,no_fm_firmware,true)
+$(call soong_config_set,libfmjni,vendor,qcom)
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
