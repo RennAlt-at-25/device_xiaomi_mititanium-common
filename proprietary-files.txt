@@ -571,7 +571,7 @@ vendor/lib64/libaoa.so
 
 # WLAN
 vendor/bin/ptt_socket_app
-vendor/bin/wcnss_service
+vendor/bin/wcnss_service:vendor/bin/wcnss_service_xiaomi
 
 # Misc
 vendor/lib64/libsoc_helper.so|affbc1cc49d3df3a6e174a21bf3fe79c7130d1c0
