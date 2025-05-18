@@ -248,7 +248,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.xiaomi_msm8953
+    android.hardware.lights-service.xiaomi_mititanium
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -431,7 +431,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/msm8953-common/msm8953-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/mititanium-common/mititanium-common-vendor.mk)
 
 # Inherit the display proprietary files
 $(call inherit-product, vendor/xiaomi/mititanium-common-graphics/mititanium-common-graphics-vendor.mk)

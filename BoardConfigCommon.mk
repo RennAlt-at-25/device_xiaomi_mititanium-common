@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/xiaomi/msm8953-common
+COMMON_PATH := device/xiaomi/mititanium-common
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
@@ -109,8 +109,8 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_xiaomi_msm8953
-TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_msm8953
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_xiaomi_mititanium
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_mititanium
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/battery_charging_enabled
@@ -176,4 +176,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 TARGET_HAS_BROKEN_WLAN_SET_INTERFACE := true
 
 # Inherit from the proprietary version
-include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+include vendor/xiaomi/mititanium-common/BoardConfigVendor.mk
