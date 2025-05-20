@@ -108,9 +108,6 @@ ro.bluetooth.a2dp_offload.supported=false
 # Graphics
 debug.renderengine.backend=skiaglthreaded
 
-# Charger
-ro.charger.disable_init_blank=true
-
 # Data
 ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
