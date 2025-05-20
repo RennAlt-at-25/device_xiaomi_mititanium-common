@@ -134,8 +134,10 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 # disable_configstore
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
 PRODUCT_PACKAGES += \
     disable_configstore
+endif
 
 # Display
 PRODUCT_PACKAGES += \
