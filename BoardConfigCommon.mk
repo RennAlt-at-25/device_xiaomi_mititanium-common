@@ -109,6 +109,11 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/device_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest_k4.19.xml
+else
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest_k4.9.xml
+endif
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 
 # Init
