@@ -327,7 +327,6 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.class_main.sh \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
@@ -337,6 +336,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.sh \
+    init.class_main.sh \
     init.qcom.post_boot.sh \
     init.qcom.early_boot.sh
 
