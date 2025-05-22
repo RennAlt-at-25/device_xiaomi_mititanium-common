@@ -443,9 +443,6 @@ subsystem mem_buf_vm
 /dev/peel_ir              0660   system     system
 /dev/spidev5.1            0660   system     system
 
-# Charger
-/sys/class/power_supply/battery  battery_charging_enabled  0660  system  system
-
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp power/control 0664 system graphics
 
 #asm330 sensor

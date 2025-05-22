@@ -111,9 +111,6 @@ DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_xiaomi_mititanium
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_mititanium
 
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/battery_charging_enabled
-
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
