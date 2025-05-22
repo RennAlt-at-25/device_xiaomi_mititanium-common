@@ -12,9 +12,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
-
-# Kernel
-TARGET_KERNEL_VERSION ?= 4.9
  
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -135,12 +132,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libstdc++.vendor
-
-# disable_configstore
-ifeq ($(TARGET_KERNEL_VERSION),4.19)
-PRODUCT_PACKAGES += \
-    disable_configstore
-endif
 
 # Display
 PRODUCT_PACKAGES += \
