@@ -175,7 +175,7 @@ system_ext/framework/dpmapi.jar
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 -vendor/bin/dpmQmiMgr;DISABLE_DEPS
 vendor/etc/init/dpmQmiMgr.rc
--vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;DISABLE_DEPS
+-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
 -vendor/lib64/libdpmqmihal.so;DISABLE_DEPS
 
 # DRM - from LA.UM.9.6.3.r1-06200-89xx.0
@@ -508,8 +508,8 @@ vendor/etc/init/imsqmidaemon.rc
 
 # Radio (IMS VT) - from LA.UM.9.6.3.r1-04400-89xx.0
 -system_ext/lib64/lib-imscamera.so;DISABLE_DEPS
--system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so;DISABLE_DEPS
--system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so;DISABLE_DEPS
+-system_ext/lib64/libimscamera_jni.so;MODULE_SUFFIX=_vendor;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
+-system_ext/lib64/libimsmedia_jni.so;MODULE_SUFFIX=_vendor;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 -system_ext/lib64/lib-imsvideocodec.so;DISABLE_DEPS
 -system_ext/lib64/lib-imsvtextutils.so;DISABLE_DEPS
 -system_ext/lib64/lib-imsvt.so;DISABLE_DEPS
@@ -526,7 +526,7 @@ vendor/etc/seccomp_policy/imsrtp.policy
 -vendor/lib64/lib-rtpcore.so;DISABLE_DEPS
 -vendor/lib64/lib-rtpsl.so;DISABLE_DEPS
 -vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so;DISABLE_DEPS
--vendor/lib64/vendor.qti.imsrtpservice@3.0.so;DISABLE_DEPS
+-vendor/lib64/vendor.qti.imsrtpservice@3.0.so;DISABLE_DEPS;MODULE_SUFFIX=_vendor
 
 # Sensors
 -vendor/bin/sensors.qti;DISABLE_DEPS
