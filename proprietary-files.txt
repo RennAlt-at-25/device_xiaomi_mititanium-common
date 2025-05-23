@@ -247,10 +247,10 @@ vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
 # Graphics (32-bit)
 -vendor/lib/egl/eglSubDriverAndroid.so;DISABLE_DEPS
--vendor/lib/egl/libEGL_adreno.so;DISABLE_DEPS
+-vendor/lib/egl/libEGL_adreno.so;DISABLE_DEPS;SYMLINK=vendor/lib/libEGL_adreno.so
 -vendor/lib/egl/libGLESv1_CM_adreno.so;DISABLE_DEPS
--vendor/lib/egl/libGLESv2_adreno.so;DISABLE_DEPS
--vendor/lib/egl/libq3dtools_adreno.so;DISABLE_DEPS
+-vendor/lib/egl/libGLESv2_adreno.so;DISABLE_DEPS;SYMLINK=vendor/lib/libGLESv2_adreno.so
+-vendor/lib/egl/libq3dtools_adreno.so;DISABLE_DEPS;SYMLINK=vendor/lib/libq3dtools_adreno.so
 -vendor/lib/egl/libq3dtools_esx.so;DISABLE_DEPS
 -vendor/lib/hw/vulkan.adreno.so:vendor/lib/vulkan.adreno.so;DISABLE_DEPS
 -vendor/lib/libC2D2.so;DISABLE_DEPS
@@ -263,10 +263,10 @@ vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
 # Graphics (64-bit)
 -vendor/lib64/egl/eglSubDriverAndroid.so;DISABLE_DEPS
--vendor/lib64/egl/libEGL_adreno.so;DISABLE_DEPS
+-vendor/lib64/egl/libEGL_adreno.so;DISABLE_DEPS;SYMLINK=vendor/lib64/libEGL_adreno.so
 -vendor/lib64/egl/libGLESv1_CM_adreno.so;DISABLE_DEPS
--vendor/lib64/egl/libGLESv2_adreno.so;DISABLE_DEPS
--vendor/lib64/egl/libq3dtools_adreno.so;DISABLE_DEPS
+-vendor/lib64/egl/libGLESv2_adreno.so;DISABLE_DEPS;SYMLINK=vendor/lib64/libGLESv2_adreno.so
+-vendor/lib64/egl/libq3dtools_adreno.so;DISABLE_DEPS;SYMLINK=vendor/lib64/libq3dtools_adreno.so
 -vendor/lib64/egl/libq3dtools_esx.so;DISABLE_DEPS
 -vendor/lib64/hw/vulkan.adreno.so:vendor/lib64/vulkan.adreno.so;DISABLE_DEPS
 -vendor/lib64/libC2D2.so;DISABLE_DEPS
