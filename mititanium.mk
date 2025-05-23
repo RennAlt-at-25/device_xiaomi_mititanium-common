@@ -428,9 +428,3 @@ PRODUCT_PACKAGES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mititanium-common/mititanium-common-vendor.mk)
-
-# Inherit the display proprietary files
-$(call inherit-product, vendor/xiaomi/mititanium-common-graphics/mititanium-common-graphics-vendor.mk)
-
-# Inherit the QC proprietary files
-$(call inherit-product, vendor/xiaomi/mititanium-common-qc/mititanium-common-qc-vendor.mk)
