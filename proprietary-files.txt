@@ -245,6 +245,58 @@ vendor/firmware/a506_zap.mdt|621df918f1d6ef0a0c3fe25c8f6a58d56af4b26a
 vendor/firmware/a530_pfp.fw|c19e1905c15622d7bb02409e6748959bceda9b08
 vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
+# Graphics (32-bit)
+-vendor/lib/egl/eglSubDriverAndroid.so;DISABLE_DEPS
+-vendor/lib/egl/libEGL_adreno.so;DISABLE_DEPS
+-vendor/lib/egl/libGLESv1_CM_adreno.so;DISABLE_DEPS
+-vendor/lib/egl/libGLESv2_adreno.so;DISABLE_DEPS
+-vendor/lib/egl/libq3dtools_adreno.so;DISABLE_DEPS
+-vendor/lib/egl/libq3dtools_esx.so;DISABLE_DEPS
+-vendor/lib/hw/vulkan.adreno.so:vendor/lib/vulkan.adreno.so;DISABLE_DEPS
+-vendor/lib/libC2D2.so;DISABLE_DEPS
+-vendor/lib/libCB.so;DISABLE_DEPS
+-vendor/lib/libOpenCL.so;DISABLE_DEPS
+-vendor/lib/libadreno_utils.so;DISABLE_DEPS
+-vendor/lib/libc2d30_bltlib.so;DISABLE_DEPS
+-vendor/lib/libgsl.so;DISABLE_DEPS
+-vendor/lib/libllvm-glnext.so;DISABLE_DEPS
+
+# Graphics (64-bit)
+-vendor/lib64/egl/eglSubDriverAndroid.so;DISABLE_DEPS
+-vendor/lib64/egl/libEGL_adreno.so;DISABLE_DEPS
+-vendor/lib64/egl/libGLESv1_CM_adreno.so;DISABLE_DEPS
+-vendor/lib64/egl/libGLESv2_adreno.so;DISABLE_DEPS
+-vendor/lib64/egl/libq3dtools_adreno.so;DISABLE_DEPS
+-vendor/lib64/egl/libq3dtools_esx.so;DISABLE_DEPS
+-vendor/lib64/hw/vulkan.adreno.so:vendor/lib64/vulkan.adreno.so;DISABLE_DEPS
+-vendor/lib64/libC2D2.so;DISABLE_DEPS
+-vendor/lib64/libCB.so;DISABLE_DEPS
+-vendor/lib64/libOpenCL.so;DISABLE_DEPS
+-vendor/lib64/libadreno_utils.so;DISABLE_DEPS
+-vendor/lib64/libc2d30_bltlib.so;DISABLE_DEPS
+-vendor/lib64/libgsl.so;DISABLE_DEPS
+-vendor/lib64/libllvm-glnext.so;DISABLE_DEPS
+
+# Graphics (Postprocessing) - mm-pp-dpps
+-vendor/bin/mm-pp-dpps;DISABLE_DEPS
+-vendor/lib64/libdisp-aba.so;DISABLE_DEPS
+
+# Graphics (Postprocessing)
+-vendor/bin/hw/vendor.display.color@1.0-service;DISABLE_DEPS
+vendor/etc/init/vendor.display.color@1.0-service.rc
+-vendor/lib64/libsdm-disp-vndapis.so;DISABLE_DEPS
+-vendor/lib64/vendor.display.color@1.0.so;DISABLE_DEPS
+-vendor/lib64/vendor.display.postproc@1.0.so;DISABLE_DEPS
+
+# Graphics (SDM)
+-vendor/lib64/libhdr_tm.so;DISABLE_DEPS
+-vendor/lib64/libscalar.so;DISABLE_DEPS
+-vendor/lib64/libsdedrm.so;DISABLE_DEPS
+-vendor/lib64/libsdm-color.so;DISABLE_DEPS
+-vendor/lib64/libsdm-diag.so;DISABLE_DEPS
+-vendor/lib64/libsdmextension.so;DISABLE_DEPS
+-vendor/lib64/libtinyxml2_1.so;DISABLE_DEPS
+
 # IRQ Balancer
 -vendor/bin/msm_irqbalance;DISABLE_DEPS
 vendor/etc/msm_irqbalance.conf
@@ -498,8 +550,8 @@ vendor/etc/init/imsqmidaemon.rc
 
 # Radio (IMS VT) - from LA.UM.9.6.3.r1-04400-89xx.0
 -system_ext/lib64/lib-imscamera.so;DISABLE_DEPS
--system_ext/lib64/libimscamera_jni.so;MODULE_SUFFIX=_vendor;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
--system_ext/lib64/libimsmedia_jni.so;MODULE_SUFFIX=_vendor;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
+-system_ext/lib64/libimscamera_jni.so;DISABLE_DEPS;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
+-system_ext/lib64/libimsmedia_jni.so;DISABLE_DEPS;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
 -system_ext/lib64/lib-imsvideocodec.so;DISABLE_DEPS
 -system_ext/lib64/lib-imsvtextutils.so;DISABLE_DEPS
 -system_ext/lib64/lib-imsvt.so;DISABLE_DEPS
