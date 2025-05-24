@@ -68,6 +68,9 @@ function blob_fixup() {
                 "${PATCHELF}" --add-needed "libshim_imscamera.so" "${2}"
             done
             ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            grep -q 'gettid: ' "${2}" || echo 'gettid: 1' >> "${2}"
+            ;;
         vendor/lib64/libwvhidl.so|vendor/lib64/mediadrm/libwvdrmengine.so)
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             sed -i 's|libprotobuf-cpp-lite-3.9.1.so|libprotobuf-cpp-full-3.9.1.so|g' "${2}"
