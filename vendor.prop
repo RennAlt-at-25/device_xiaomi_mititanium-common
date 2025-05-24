@@ -215,8 +215,5 @@ sys.vendor.shutdown.waittime=500
 ro.soc.manufacturer=QTI
 ro.soc.model=MSM8953
 
-# Watchdog
-ro.hw_timeout_multiplier=6
-
 # Zygote
 zygote.critical_window.minute=10
