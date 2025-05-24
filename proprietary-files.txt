@@ -224,6 +224,7 @@ vendor/etc/xtra_root_cert.pem
 -vendor/lib64/vendor.qti.gnss@4.0.so;DISABLE_DEPS
 
 # GNSS (IMPL)
+-vendor/lib/libpdmapper.so;DISABLE_DEPS
 -vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so;DISABLE_DEPS
 -vendor/lib64/libcdfw.so;DISABLE_DEPS
 -vendor/lib64/libdataitems.so;DISABLE_DEPS
@@ -379,7 +380,6 @@ vendor/etc/qmi_fw.conf
 -vendor/lib64/libdsi_netctrl.so;DISABLE_DEPS
 -vendor/lib64/libdsutils.so;DISABLE_DEPS
 -vendor/lib64/libidl.so;DISABLE_DEPS
--vendor/lib64/libpdmapper.so;DISABLE_DEPS
 -vendor/lib64/libqcci_legacy.so;DISABLE_DEPS
 -vendor/lib64/libqdi.so;DISABLE_DEPS
 -vendor/lib64/libqdp.so;DISABLE_DEPS
@@ -395,7 +395,6 @@ vendor/etc/qmi_fw.conf
 -vendor/lib/libdsi_netctrl.so;DISABLE_DEPS
 -vendor/lib/libdsutils.so;DISABLE_DEPS
 -vendor/lib/libidl.so;DISABLE_DEPS
--vendor/lib/libpdmapper.so;DISABLE_DEPS
 -vendor/lib/libqcci_legacy.so;DISABLE_DEPS
 -vendor/lib/libqdi.so;DISABLE_DEPS
 -vendor/lib/libqdp.so;DISABLE_DEPS
