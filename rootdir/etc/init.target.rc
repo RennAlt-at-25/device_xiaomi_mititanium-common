@@ -133,7 +133,7 @@ service thermal-engine /system/vendor/bin/thermal-engine
    group root
    writepid /dev/cpuset/system-background/tasks
 
-service wcnss-service /system/vendor/bin/wcnss_service_xiaomi
+service wcnss-service /system/vendor/bin/wcnss_service
     class main
     user system
     group system wifi radio

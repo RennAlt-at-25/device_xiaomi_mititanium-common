@@ -609,7 +609,6 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 
 # WLAN
 -vendor/bin/ptt_socket_app;DISABLE_DEPS
--vendor/bin/wcnss_service:vendor/bin/wcnss_service_xiaomi;DISABLE_DEPS
 
 # Misc
 -vendor/lib64/libsoc_helper.so;DISABLE_DEPS
