@@ -304,7 +304,6 @@ vendor/etc/msm_irqbalance.conf
 vendor/etc/msm_irqbalance_little_big.conf
 
 # Listen - from LA.UM.9.6.2.r1-04200-89xx.0
--vendor/lib/hw/sound_trigger.primary.msm8953.so;DISABLE_DEPS
 -vendor/lib/libadpcmdec.so;DISABLE_DEPS
 -vendor/lib/libcapiv2svacnn.so;DISABLE_DEPS
 -vendor/lib/libcapiv2vop.so;DISABLE_DEPS
