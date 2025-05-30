@@ -1,23 +1,11 @@
 # Audio
-audio.chk.cal.us=0
-audio.offload.disable=false
-ro.audio.soundfx.dirac=true
-ro.bluetooth.a2dp_offload.supported=false
-
-#minimum duration for offload playback in secs
-audio.offload.min.duration.secs=30
-
-#enable offload audio video playback by default
-audio.offload.video=true
-
-#enable music through deep buffer
-audio.deep_buffer.media=true
-
-#set AudioFlinger client heap size
-ro.af.client_heap_size_kbyte=7168
-
-# Reduce client buffer size for fast audio output tracks
 af.fast_track_multiplier=1
+audio.deep_buffer.media=true
+audio.offload.min.duration.secs=30
+audio.offload.video=true
+ro.af.client_heap_size_kbyte=7168
+ro.config.media_vol_steps=25
+vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 
 # Charger
 ro.charger.disable_init_blank=true
