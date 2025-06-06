@@ -42,9 +42,6 @@ persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableSigHandler=1
 persist.vendor.ims.disableQXDMLogs=1
 
-# System
-persist.sys.binary_xml=false
-
 # Telephony
 DEVICE_PROVISIONED=1
 persist.rild.nitz_long_ons_0=
