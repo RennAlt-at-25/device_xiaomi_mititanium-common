@@ -101,10 +101,10 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 BOARD_SHIPPING_API_LEVEL := 30
 
 # HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/device_compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := hardware/mititanium-module/vintf/aosp/framework_manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := hardware/mititanium-module/vintf/aosp/device_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := hardware/mititanium-module/vintf/aosp/manifest.xml
+DEVICE_MATRIX_FILE := hardware/mititanium-module/vintf/aosp/compatibility_matrix.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_xiaomi_mititanium
