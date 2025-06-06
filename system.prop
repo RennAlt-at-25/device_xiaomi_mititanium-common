@@ -7,6 +7,9 @@ ro.af.client_heap_size_kbyte=7168
 ro.config.media_vol_steps=25
 vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 
+# Charger
+ro.charger.disable_init_blank=true
+
 # Data
 ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
