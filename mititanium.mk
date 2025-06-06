@@ -10,7 +10,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 # Signed
--include vendor/extra/product.mk
+-include hardware/mititanium-module/lineage-priv/keys/keys.mk
 
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
