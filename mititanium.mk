@@ -403,3 +403,6 @@ $(call inherit-product, vendor/xiaomi/mititanium-common-graphics/mititanium-comm
 
 # Inherit the QC proprietary files
 $(call inherit-product, vendor/xiaomi/mititanium-common-qc/mititanium-common-qc-vendor.mk)
+
+# Inherit extra if exists
+$(call inherit-product-if-exists, vendor/extra/product.mk)
