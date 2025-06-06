@@ -362,7 +362,10 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
 # Vibrator
-$(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+$(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
+
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service
 
 # Whitelisted app
 PRODUCT_COPY_FILES += \
